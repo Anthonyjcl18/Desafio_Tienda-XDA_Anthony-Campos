@@ -23,7 +23,7 @@
     }
 
     /* Desktop Size */
-    
+
     @include respond-to($bp-xl-desktop) {
         &__paragraph {
             margin-top: 80px;

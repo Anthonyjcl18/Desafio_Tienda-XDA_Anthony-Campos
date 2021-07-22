@@ -60,7 +60,7 @@
     }
 
     /* Desktop Size */
-    
+
     @include respond-to($bp-xl-desktop) {
         grid-template-columns: 39vw 4vw 57vw;
         grid-template-rows: 10vh 62vh 28vh;
