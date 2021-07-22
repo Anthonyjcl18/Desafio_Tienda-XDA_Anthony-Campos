@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,79 @@
     <title>Desafio - Tienda XDA</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    
+    <!-- Grid Container -->
+    <div class="container-grid">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <h3 class="navbar__logoName">XDA</h3>
+            </div>
+            <div class="navbar__menuBurger">
+                <input class="navbar__input" type="checkbox" id="checkbox" />
+                <label class="navbar__label" for="checkbox">
+                    <span class="navbar__burger burger1"></span>
+                    <span class="navbar__burger burger2"></span>
+                    <span class="navbar__burger burger3"></span>
+                </label>
+            </div>
+            <div class="navbar__menu">
+                <ul class="navbar__menuList">
+                    <li class="navbar__menuItem">Mujer
+                        <a class="navbar__menuLink" href="#Mujer"></a>
+                    </li>
+                    <li class="navbar__menuItem">Hombre
+                        <a class="navbar__menuLink" href="#Hombre"></a>
+                    </li>
+                    <li class="navbar__menuItem">Accesorios
+                        <a class="navbar__menuLink" href="#Accesorios"></a>
+                    </li>
+                    <li class="navbar__menuItem">Blog
+                        <a class="navbar__menuLink" href="#Blog"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header__imagen"></div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Article -->
+        <article class="article">
+            <div class="article__container">
+                <h1 class="article__title">Lorem ipsum<span class="article__titleCut">ad valorem</span></h1>
+                <p class="article__paragraph">Doloremque sunt officiis minus? Ullam esse, expedita, cumque officiis
+                    quibusdam, architecto distinctio dolor enim tempore nihil doloremque! Quod alias iure aliquid
+                    veritatis.<span class="article__paragraphNone">consequatur aspernatur repellendus iusto aliquid
+                    culpa quaerat tenetur doloremque nisi eos consequuntur libero, obcaecati hic omnis.</span>
+                </p>
+                <button class="button">Ir a tienda</button>
+            </div>
+        </article>
+        <!-- End Article -->
+
+        <!-- Subscribe -->
+        <div class="subscribe">
+            <p class="subscribe__paragraph">Suscribir</p>
+        </div>
+        <!-- End Subscribe -->
+
+        <!-- Footer -->
+        <footer class="footer">
+            <h2 class="footer__title">Newsletter</h2>
+            <form class="form" action="">
+                <legend class="form__legend">Correo Electrónico</legend>
+                <input class="form__input" type="email" placeholder="Ingresa tu correo electrónico">
+            </form>
+        </footer>
+        <!-- End Footer -->
+    </div>
+    <!-- End Grid Container -->
 </body>
+
 </html>
