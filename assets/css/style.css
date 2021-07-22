@@ -112,7 +112,7 @@ body {
   .navbar .navbar__logoName {
     font-size: 30px;
     padding-top: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
   }
   .navbar .navbar__menuBurger {
     display: inline-block;
@@ -166,6 +166,34 @@ body {
   }
   .navbar .navbar__menuBurger {
     display: none;
+  }
+}
+
+/* Mobile First */
+.header {
+  /* Tablet size */
+  /* Desktop Size */
+}
+.header__imagen {
+  background: url(../img/imagen1.png);
+  height: 28vh;
+  width: 100%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .header__imagen {
+    height: 70vh;
+    background-position: center;
+  }
+}
+@media (min-width: 1200px) {
+  .header__imagen {
+    height: 90vh;
+    background-position: top;
   }
 }
 
