@@ -16,6 +16,37 @@ body {
 
 /* Font Order */
 /* Font Size */
+/* Mobile First */
+.button {
+  text-decoration: none;
+  border: none;
+  margin: 15px 0;
+  padding: 8px 17px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #0C0910;
+  background-color: #FFF;
+  user-select: none;
+  -webkit-appearance: button;
+  border: 1.5px solid #0C0910;
+}
+
+/* Tablet size */
+@media (min-width: 768px) {
+  .button {
+    padding: 8px 20px;
+    margin-top: 20px;
+  }
+}
+/* Desktop Size */
+@media (min-width: 1200px) {
+  .button {
+    padding: 12px 30px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}
 .container-grid {
   display: grid;
   height: 100vh;
