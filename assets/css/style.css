@@ -16,5 +16,157 @@ body {
 
 /* Font Order */
 /* Font Size */
+/* Mobile First */
+.navbar {
+  background-color: #FFF;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* Tablet size */
+  /* Desktop Size */
+}
+.navbar__logo {
+  background-color: #0C0910;
+  height: 100%;
+  width: 70px;
+  display: inline-block;
+}
+.navbar__logoName {
+  margin: 0 auto;
+  font-family: "Old Standard TT", serif;
+  font-size: 20px;
+  color: #FFF;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.navbar__menuBurger {
+  padding: 20px 20px;
+  padding-right: 30px;
+}
+.navbar__input {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.navbar__input:checked ~ ul {
+  width: 100%;
+  -webkit-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out;
+}
+.navbar__input:checked ~ label .burger1 {
+  opacity: 1;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #000000;
+}
+.navbar__input:checked ~ label .burger2 {
+  opacity: 0;
+}
+.navbar__input:checked ~ label .burger3 {
+  opacity: 1;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: #000000;
+}
+.navbar__burger {
+  display: block;
+  width: 28px;
+  height: 3px;
+  position: relative;
+  background-color: #000000;
+  z-index: 1;
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
+}
+.navbar .burger1 {
+  -webkit-transform-origin: 10% 0%;
+  transform-origin: 10% 0%;
+  margin-bottom: 5px;
+}
+.navbar .burger2 {
+  margin-bottom: 5px;
+}
+.navbar .burger3 {
+  -webkit-transform-origin: 10% 100%;
+  transform-origin: 10% 100%;
+}
+.navbar__menu {
+  display: none;
+}
+@media (min-width: 768px) {
+  .navbar .navbar {
+    height: 100%;
+    width: 70px;
+  }
+  .navbar .navbar__logo {
+    width: 100px;
+    display: inline-block;
+  }
+  .navbar .navbar__logoName {
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  .navbar .navbar__menuBurger {
+    display: inline-block;
+  }
+  .navbar .navbar__menu {
+    height: 200px;
+    display: inline-block;
+    padding-top: 15px;
+  }
+  .navbar .navbar__menu:last-child {
+    margin-right: 40px;
+  }
+  .navbar .navbar__menuItem {
+    color: #0C0910;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-family: 18px;
+    margin-top: 25px;
+    display: inline-block;
+    padding: 0 27px;
+  }
+  .navbar .navbar__menuBurger {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar .navbar {
+    height: 100%;
+    width: 120px;
+  }
+  .navbar .navbar__logo {
+    width: 120px;
+    display: inline-block;
+  }
+  .navbar .navbar__logoName {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+  .navbar .navbar__menuBurger {
+    display: inline-block;
+  }
+  .navbar .navbar__menu {
+    padding: 12px 0;
+  }
+  .navbar .navbar__menu:last-child {
+    margin-right: 40px;
+  }
+  .navbar .navbar__menuItem {
+    padding: 0 40px;
+    font-size: 18px;
+  }
+  .navbar .navbar__menuBurger {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
