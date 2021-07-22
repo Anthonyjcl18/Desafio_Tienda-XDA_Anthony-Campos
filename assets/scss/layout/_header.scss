@@ -3,7 +3,7 @@
 .header {
     &__imagen {
         background: url(../img/imagen1.png);
-        height: 28vh;
+        height: 35vh;
         width: 100%;
         margin: 0 auto;
         background-repeat: no-repeat;
@@ -16,8 +16,9 @@
 
     @include respond-to($bp-md-tablet) {
         &__imagen {
-            height: 70vh;
+            height: 53vh;
             background-position: center;
+            background-size: 103%;
         }
     }
 
@@ -25,7 +26,7 @@
 
     @include respond-to($bp-xl-desktop) {
         &__imagen {
-            height: 90vh;
+            height: 115vh;
             background-position: top;
         }
     }

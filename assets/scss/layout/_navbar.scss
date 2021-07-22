@@ -17,8 +17,8 @@
         font-size: $x-large-font;
         color: $white;
         text-align: center;
-        padding-top: 20px;
-        padding-bottom: 15px;
+        padding-top: 23px;
+        padding-bottom: 12px;
     }
     &__menuBurger {
         padding: 20px 20px;
@@ -94,8 +94,8 @@
         }
         .navbar__logoName {
             font-size: $xx-large-font;
-            padding-top: 30px;
-            padding-bottom: 20px;
+            padding-top: 35px;
+            padding-bottom: 15px;
         }
         .navbar__menuBurger {
             display: inline-block;
@@ -112,10 +112,10 @@
             color: $smoky-black;
             font-family: $primary-font;
             font-weight: $primary-font-bold;
-            font-family: $large-font;
+            font-size: $large-font;
             margin-top: 25px;
             display: inline-block;
-            padding: 0 27px;
+            padding: 0 20px;
         }
         .navbar__menuBurger {
             display: none;
@@ -127,10 +127,10 @@
     @include respond-to($bp-xl-desktop) {
         .navbar {
             height: 100%;
-            width: 120px;
+            width: 110px;
         }
         .navbar__logo {
-            width: 120px;
+            width: 100px;
             display: inline-block;
         }
         .navbar__logoName {
@@ -147,7 +147,7 @@
             margin-right: 40px;
         }
         .navbar__menuItem {
-            padding: 0 40px;
+            padding: 0 28px;
             font-size: $large-font;
         }
         .navbar__menuBurger {
